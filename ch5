@@ -1,0 +1,17 @@
+#include <stdio.h> 
+#define SEC_PER_MINUTE 60 // 1 minute is 60 seconds 
+
+void remainder_op( void ) 
+{
+    // Remainder operator
+    int input, minute, second;
+
+    printf("Please enter seconds : " );
+    scanf ( "%d" , &input); // Read the time in seconds . 
+
+    minute = input / SEC_PER_MINUTE; // how many minutes 
+    second = input % SEC_PER_MINUTE; // how many seconds
+
+    printf ( "%d seconds are %d minutes %d seconds. \n" , input, minute, second);
+    return;
+}
